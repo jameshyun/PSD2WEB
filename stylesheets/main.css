@@ -1,0 +1,188 @@
+/***************************************** Resets *******************************************/
+* {
+	margin: 0; padding: 0;
+	font: 100%/1.4 sans-serif, georgia, arial;		
+}
+
+li { list-style: none; }
+
+img { border: 0; max-width: 100%; }
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+p {
+	font-size: 0.8em;
+}
+
+
+/***************************************** classes to be used to set text color *******************************************/
+.green { color: green; }
+.red { color: red; }
+.blue { color: blue; }
+
+
+/***************************************** Body *******************************************/
+body {
+	background: #fff;
+	width: 960px;
+	margin: 0 auto;
+	background: url("../images/world-skills-australia-header-background.jpg") top no-repeat, 
+				url("../images/world-skills-australia-footer-background.jpg") bottom no-repeat;	
+}
+
+
+/***************************************** Main Logo *******************************************/
+header { width: 960px; height: 160px;}
+header img#main-logo {
+	width: 380px; height: 155px;
+	margin: 20px 0 5px 50px;
+}
+
+
+/************************************** Main Navigation ****************************************/
+nav[role="navigation"] {
+	width: 960px;
+	background: gold;
+	
+}
+
+nav[role="navigation"] ul {
+	text-align: right;
+	margin-right: 80px;
+}
+
+nav[role="navigation"] ul li {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+nav[role="navigation"] ul li:last-child {
+	margin-right: 0;
+}
+
+nav[role="navigation"] ul li a {
+	line-height: 2.5em;
+	display: block;
+	padding-left: .8em;
+	padding-right: .8em;
+}
+
+nav[role="navigation"] ul li:first-child a {
+	background: #000;
+	color: #fff;	
+}
+
+
+/*************************************** Main Content *****************************************/
+#main-wrapper {
+	width: 880px;
+	margin: 0 auto;
+	background: hsla(0, 0%, 100%, 0.8);
+}
+
+#main-wrapper main[role="main"] {
+	overflow: hidden;
+}
+
+#main-wrapper main[role="main"] h1 {
+	margin-top: 15px;
+}
+
+#main-wrapper main[role="main"] div.col {
+	width: 270px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 23.33333333333333px;
+	
+}
+
+#main-wrapper main[role="main"] div.col p {
+	word-break: break-word;
+	//word-break: break-all;
+	//hyphens: auto;
+    //-ms-hyphens: auto;
+    //-moz-hyphens: auto;
+}
+
+#main-wrapper main[role="main"]>div:first-child{	
+	height: 350px;
+	background: url("../images/world-skills-australia-large-star-symbol.png") -10% no-repeat;
+	background-size: 350px 350px;	
+	position: relative; top: -30px;
+
+}
+#main-wrapper main[role="main"]>div>img {		
+	position: relative; top: 20px;
+
+}
+
+
+
+
+
+
+#competition-skills ul {
+	background: gold;
+}
+#competition-skills ul li {
+	position: relative;	
+}
+
+#competition-skills ul li a {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+#competition-skills ul li a:before {
+	content: url("../images/world-skills-australia-bullet-star-symbol.png");
+	vertical-align: middle;
+}
+
+
+
+
+
+#middle-banner {
+	position: relative;
+}
+#middle-banner img.star-symbol1 {
+	position: absolute;
+	left: 0; bottom: 1em;
+}
+#middle-banner img.star-symbol2 {
+	position: absolute;
+	left: 50%; bottom: 1em;
+}
+#middle-banner img.star-symbol3 {
+	position: absolute;
+	right: 0; bottom: 1em;
+}
+
+
+
+#main-wrapper #competition {
+	overflow: hidden;
+}
+
+#main-wrapper #competition div.col {
+	width: 29%;
+	float: left;
+	padding: 1em;
+}
+
+#main-wrapper #competition div.col p {
+	word-break: break-word;	
+	margin-top: 1em; margin-bottom: 1em;
+}

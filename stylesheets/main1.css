@@ -1,0 +1,170 @@
+* {
+	margin: 0; padding: 0;
+	font: 100%/1.4 sans-serif, georgia, arial;
+	//text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+}
+
+li { list-style: none; }
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+p {
+	font-size: 0.8em;
+}
+
+.green { color: green; }
+.red { color: red; }
+.blue { color: blue; }
+
+body {
+	background: url("../images/main-background-top.png") top right no-repeat, url("../images/main-background-bottom.png") bottom center no-repeat;
+}
+
+/***************************************** Main Logo *******************************************/
+header {
+	//text-align: left;
+}
+header img#main-logo {
+	margin-top: 1.5em;
+	margin-left: 1.5em;
+}
+
+
+/************************************** Main Navigation ****************************************/
+nav[role="navigation"] {
+	background: gold;
+	
+}
+nav[role="navigation"] ul {
+	text-align: right;
+	padding-right: 8%;
+}
+
+nav[role="navigation"] ul li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+nav[role="navigation"] ul li a {
+	line-height: 2.5em;
+	display: block;
+	padding-left: .8em;
+	padding-right: .8em;
+}
+
+nav[role="navigation"] ul li:first-child a {
+	background: #000;
+	color: #fff;	
+}
+
+
+/******************************************* BODY *********************************************/
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*************************************** Main Content *****************************************/
+#main-wrapper {
+	background: hsla(0, 0%, 100%, 0.8);
+	padding: 1em 2em 1em;
+	margin-bottom: 3em;
+}
+
+#main-wrapper main[role="main"] {
+	overflow: hidden;
+}
+
+#main-wrapper main[role="main"] div.col {
+	width: 33.33333333333333%;
+	float: left;
+	padding: 1em;
+}
+
+#main-wrapper main[role="main"] div.col p {
+	word-break: break-word;
+	//word-break: break-all;
+	//hyphens: auto;
+    //-ms-hyphens: auto;
+    //-moz-hyphens: auto;
+}
+
+#main-wrapper main[role="main"]>div>img {
+	background: url("../images/large-star-symbol.png") center no-repeat;
+	background-size: contain;
+
+}
+
+#competition-skills ul {
+	background: gold;
+}
+#competition-skills ul li {
+	position: relative;	
+}
+
+#competition-skills ul li a {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+#competition-skills ul li a:before {
+	content: url("../images/bullet-star-symbol.png");
+	vertical-align: middle;
+}
+
+
+
+
+
+#middle-banner {
+	position: relative;
+}
+#middle-banner img.star-symbol1 {
+	position: absolute;
+	left: 0; bottom: 1em;
+}
+#middle-banner img.star-symbol2 {
+	position: absolute;
+	left: 50%; bottom: 1em;
+}
+#middle-banner img.star-symbol3 {
+	position: absolute;
+	right: 0; bottom: 1em;
+}
+
+
+
+#main-wrapper #competition {
+	overflow: hidden;
+}
+
+#main-wrapper #competition div.col {
+	width: 33.33333333333333%;
+	float: left;
+	padding: 1em;
+}
+
+#main-wrapper #competition div.col p {
+	word-break: break-word;	
+	margin-top: 1em; margin-bottom: 1em;
+}

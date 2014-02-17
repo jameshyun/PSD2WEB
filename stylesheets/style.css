@@ -1,0 +1,213 @@
+
+/******************************************   Reset   ********************************************/
+
+/*	Reset all elements' style 
+ *	- sets all elements margin and padding to 0px	
+ *	- aligns all elements to be centred
+ *	- sets font size to 16px, line-height to 1.4, font family to sans-serif, georgia and arial respectively 
+ */
+* {
+	margin: 0; padding: 0;
+	text-align: center;
+	font: 16px/1.4 sans-serif, georgia, arial;
+}
+
+/*	Reset all <img> elements' style 
+ *	- sets border to 0 in case older browser displays it
+ *	- sets max-width to 100% to be responsive based on its parent container
+ */
+img { 
+	border:0 
+	max-width: 100%;
+}
+
+/*
+ *	refine list style type to none
+ */
+ul { list-style: none; }
+
+
+/*
+ *	remove under-bar for anchor tag 
+ *	define default colour to black 
+ */
+a { text-decoration: none; color: black;}
+
+/*
+ *	defines classes for text colour and font (size and weight)
+ */
+.green {	color: green;}
+.red { color: red; }
+.blue { color: blue; }
+.heading {font-size:20px; font-weight: bold;}
+.skills_heading { 
+	display: inline;
+	padding: 5px 15px; 
+	border-radius:5px;
+	background: #000; color: #fff;
+}
+
+
+/***************************************   Body Styling   *****************************************/
+
+/*
+ *	set responsive width to body;
+ *	centre the content
+ *	load a background image for body area ( no-repeat) 
+ */
+body {	
+	width: 100%;
+	margin: 0 auto;
+	background: url("../images/main-bg.png") right top no-repeat, url("../images/footer-bg.png") 50% bottom no-repeat;; 	
+}
+
+
+/****************************************   Navigation   ******************************************/
+
+nav[role='navigation'] {
+	overflow: hidden;
+	margin-right: 40px;
+	background: yellow;
+}
+nav[role='navigation'] ul  { float: right; margin-right: 100px;}
+nav[role='navigation'] ul li {
+	display: block;
+	float: left;
+	padding: 15px;	
+}
+nav[role='navigation'] ul li a {
+	background: yellow;
+	
+}
+.active > a { color: #fff; background: #000;}
+
+
+
+table { background: yellow; border-radius: 15px;}
+table tr td{ text-align: left; padding: 4px;}
+
+section#competition_skills #skills_wrapper{ 
+	background: yellow;	
+	border-radius: 10px;	
+	overflow: hidden;
+}
+section#competition_skills #skills_wrapper .skill {
+	float: left;
+}
+
+
+
+/******************************************   Footer   ********************************************/
+/*
+ * Footer Styling
+ * - sets background colour black
+ * - sets text colour white
+ * - aligns text to the left
+ * - appropriate padding around the text
+ */ 
+footer .copyright{ 
+	background: black;
+	color: #fff;
+	text-align: left;
+	padding: 15px 30px;
+	margin-bottom: 75px;	
+	margin-right: 40px;
+}	
+
+
+/*
+ *	container to wrap the whole area (after <head> and before <footer>) 
+ *	sets background colour to white and makes it transparent to see background image
+ *	sets margin from the right side to 40px 
+ */
+#main_wrapper { 
+	background: white;
+	opacity: 0.8;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+/*
+ *	main logo to floated to left with margins from top and left side.
+ */
+header {overflow: hidden; }
+	#main_logo { 
+		float: left; 
+		width: 250px;	
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+/*
+ * Footer Styling
+ * - sets background colour black
+ * - sets text colour white
+ * - aligns text to the left
+ * - appropriate padding around the text
+ */ 
+footer .copyright{ 
+	background: black;
+	color: #fff;
+	text-align: left;
+	padding: 15px 30px;
+	margin-bottom: 75px;	
+	margin-right: 40px;
+}	
+
+/*
+header {overflow: hidden; }
+header #main_logo { 
+	float: left; 
+	width: 250px;	
+	margin-top: 30px;
+	margin-left: 30px;
+}
+nav { background: yellow; }
+
+nav ul li {
+text-align: right;
+display: inline-block;	
+		
+}
+nav ul li a {
+
+	padding: 7px;
+	margin-right: 25px;
+}
+
+.active {
+	background: black;
+	color: white;
+}	
+
+main #star_top { background: url('../images/students-top-star.png') no-repeat;}
+.main_col {
+	float: left;
+	width: 33.33333333333333%;
+}
+
+#competition_lists{
+	
+}
+
+#middle_image {
+	position: relative;
+}
+#middle_image .student-middle {
+	z-index:-1;
+}
+#middle_image.star1 {
+	position: absolute;
+	left:0; bottom:0;	
+	z-index:1;
+}
+#middle_image .star2 {
+	position: absolute;
+	left:50%; bottom:0;	
+	z-index:1;
+}
+#middle_image .star3 {
+	position: absolute;
+	right:0; bottom:0;
+z-index:1;	
+}*/
