@@ -27,3 +27,23 @@ HTML
 • Meta Information
 • Appropriate use of DIVS & Tables (if required)
 • Validated without errors
+
+
+									Outcomes
+Images
+- all images optimized in its quality and type
+- included ALT tages with SEO friedly description
+- used 2 main background images at the top and bottom
+- all images named SEO friendly and saved in 'images' folder
+
+CSS
+- external style sheet used (stylesheets/main.css)
+- tried to comment as many as possible in both HTML and CSS
+- the document was successfully checked as CSS3 (http://jigsaw.w3.org/css-validator/)
+
+HTML
+- search Engine Optimised
+- accessible code
+- meta information
+- appropriate use of divs & tables
+- the document was successfully checked as HTML5 (validator.w3.org, html5.validator.nu)

@@ -85,36 +85,28 @@ nav[role="navigation"] ul li:first-child a {
 
 
 /*************************************** Main Content *****************************************/
+
+/********** First Row **********/
 #main-wrapper {
 	width: 880px;
 	margin: 0 auto;
 	background: hsla(0, 0%, 100%, 0.8);
 }
-
 #main-wrapper main[role="main"] {
 	overflow: hidden;
 }
-
 #main-wrapper main[role="main"] h1 {
 	margin-top: 15px;
 }
-
 #main-wrapper main[role="main"] div.col {
 	width: 270px;
 	float: left;
 	margin-top: 15px;
-	margin-right: 23.33333333333333px;
-	
+	margin-right: 23.33333333333333px;	
 }
-
 #main-wrapper main[role="main"] div.col p {
-	word-break: break-word;
-	//word-break: break-all;
-	//hyphens: auto;
-    //-ms-hyphens: auto;
-    //-moz-hyphens: auto;
+	word-break: keep-all;	
 }
-
 #main-wrapper main[role="main"]>div:first-child{	
 	height: 350px;
 	background: url("../images/world-skills-australia-large-star-symbol.png") -10% no-repeat;
@@ -128,61 +120,90 @@ nav[role="navigation"] ul li:first-child a {
 }
 
 
-
-
-
-
-#competition-skills ul {
+/********** Second Row **********/
+#competition-skills h2 {
+	clear: left;
+	display: inline-block;
+	color: #fff;
+	background: #000;
+	line-height: 40px;	
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+#competition-skills ul#competition-skill-list {
 	background: gold;
+	border-radius: 5px;
 }
-#competition-skills ul li {
-	position: relative;	
-}
-
 #competition-skills ul li a {
-	display: block;
+	//background: gold;
+	//display: block;
 	float: left;
 	width: 25%;
+	line-height: 40px;
 }
-
 #competition-skills ul li a:before {
 	content: url("../images/world-skills-australia-bullet-star-symbol.png");
 	vertical-align: middle;
 }
 
 
-
-
-
-#middle-banner {
+/********** Third Row **********/
+aside #middle-banner {
 	position: relative;
+	z-index: 1;
 }
-#middle-banner img.star-symbol1 {
-	position: absolute;
-	left: 0; bottom: 1em;
+aside #middle-banner>img {
+	position: relative;
+	left: 15px;
+	z-index: 3;
 }
-#middle-banner img.star-symbol2 {
+aside #middle-banner img.star-symbol1 {
 	position: absolute;
-	left: 50%; bottom: 1em;
+	left: 0; bottom: -17px;
+	z-index: 2;
 }
-#middle-banner img.star-symbol3 {
+aside #middle-banner img.star-symbol2 {
 	position: absolute;
-	right: 0; bottom: 1em;
+	left: 388px; bottom: -17px;
+	z-index: 2;
+}
+aside #middle-banner img.star-symbol3 {
+	position: absolute;
+	left: 720px; bottom: -17px;
+	z-index: 2;
 }
 
 
-
-#main-wrapper #competition {
+/********** Fourth Row **********/
+#main-wrapper aside #competition {
 	overflow: hidden;
+	margin-top: 15px;
 }
-
-#main-wrapper #competition div.col {
+#main-wrapper aside #competition div.col {
 	width: 29%;
 	float: left;
 	padding: 1em;
 }
-
-#main-wrapper #competition div.col p {
-	word-break: break-word;	
+#main-wrapper aside #competition div.col p {
+	word-break: keep-all;	
 	margin-top: 1em; margin-bottom: 1em;
+}
+
+/********** Sub Logo **********/
+#main-wrapper .sub-logo {
+	position: relative;
+	left: 650px;
+	bottom: 120px;
+}
+
+
+/*************************************** Footer *****************************************/
+footer .copyright {
+	background: #000;
+	color: #fff;
+	line-height: 40px;
+	padding-left: 25px;
+	margin-bottom: 70px;
 }
